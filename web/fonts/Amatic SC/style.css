@@ -1,0 +1,14 @@
+@font-face {
+   font-family: 'Amatic SC';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 700;
+   src: url('file:///C:/Marcos/APRENDER/Site/mobirise/fonts/Amatic SC/700.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Amatic SC';
+   font-style: regular;
+   font-display: swap;
+   font-weight: 400;
+   src: url('file:///C:/Marcos/APRENDER/Site/mobirise/fonts/Amatic SC/regular.ttf') format('truetype');
+}
