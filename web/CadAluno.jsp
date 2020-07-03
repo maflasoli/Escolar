@@ -28,7 +28,7 @@
         <form action="CadAluno.jsp">
             <!-- area de campos do form -->
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-md-center">
                     <div class="form-group col-md-2">
                         <label for="RM">RM</label>
                         <input type="text" class="form-control" id="RM">
@@ -39,7 +39,7 @@
                         <input type="text" class="form-control" id="campo3">
                     </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-2">
                         <label for="campo3">Campo Três</label>
                         <input type="text" class="form-control" id="campo3">
                     </div>
