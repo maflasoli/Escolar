@@ -1,3 +1,10 @@
+<%-- 
+    Document   : index
+    Created on : 02/07/2020, 21:42:15
+    Author     : MarcosMG
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
