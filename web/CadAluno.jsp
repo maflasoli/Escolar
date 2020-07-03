@@ -28,6 +28,9 @@
         <form action="CadAluno.jsp">
             <!-- area de campos do form -->
             <div class="container">
+                
+                <!--FAZENDO AJUSTE DE LARGURA DO CONTAINER-->
+                
                 <div class="row justify-content-md-center">
                     <div class="form-group col-md-2">
                         <label for="RM">RM</label>
