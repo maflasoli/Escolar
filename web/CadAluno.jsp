@@ -49,6 +49,12 @@
                 </div>
             </div>    
             <hr />
+            
+            <!--APÓS O CADASTRO, CHAMAR O SERVLET MOSTRANDO TODOS OS DADOS,
+                INCLUSIVE FOTO SE POSSÍVEL, E DAR OPÇÃO DE IMPRIMIR, ALTERAR
+                OU DE ATÉ MESMO CANCELAR O CADASTRO DO ALUNO...
+            -->
+            
             <div id="actions" class="row">
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-primary">Salvar</button>
