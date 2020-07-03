@@ -4,6 +4,7 @@
     Author     : MarcosMG
 --%>
 
+<%@ page language="Java" import="BD.conecta"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -34,6 +35,7 @@
 
     </head>
     <body>
+               
         <section class="menu cid-s02SU4Sfxu" once="menu" id="menu1-3">
             <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,22 +75,38 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form name="frmAcesso" action="index.jsp" method="POST">
                                 <div class="form-group">
                                     <label for="Usuario">Usuário</label>
-                                    <input type="text" class="form-control" id="Usuario" aria-describedby="UsuarioAjuda" placeholder="Nome de usuário">
+                                    <input type="text" name="Usuario" class="form-control" id="Usuario" aria-describedby="UsuarioAjuda" placeholder="Nome de usuário">
                                     <small id="UsuarioAjuda" class="form-text text-muted">Você é responsável pelo uso do Login/Nome de usuário.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="SenhaUsuario">Senha</label>
-                                    <input type="password" class="form-control" id="SenhaUsuario" placeholder="Senha">
+                                    <input type="password" name="SenhaUsuario" class="form-control" id="SenhaUsuario" placeholder="Senha">
                                 </div>
+
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-success">Entrar</button>
+                                <!--<input type="submit" value="Acesso" name="btAcesso"/>-->
+
                             </form>
+                            <%                                conecta con = new conecta();
+                                String usuario = request.getParameter("Usuario");
+                                String senha = request.getParameter("SenhaUsuario");
+
+                                boolean acesso = con.validausuario(usuario, senha);
+
+                                if (acesso && usuario != null && senha != null && !usuario.isEmpty() && !senha.isEmpty()) {
+                                    session.setAttribute("usuario", usuario);
+                                    response.sendRedirect("acesso.jsp");
+                                }
+                            %>
                         </div>
-                        <div class="modal-footer">
+                        <!--<div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                             <button type="button" class="btn btn-success">Entrar</button>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
