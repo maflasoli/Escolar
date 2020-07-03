@@ -29,12 +29,12 @@
             <!-- area de campos do form -->
             <div class="container">
                 <div class="row">
-                    <div class="form-group col-md-4">
-                        <label for="campo1">Campo Um</label>
-                        <input type="text" class="form-control" id="campo1">
+                    <div class="form-group col-md-2">
+                        <label for="RM">RM</label>
+                        <input type="text" class="form-control" id="RM">
                     </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                         <label for="campo2">Campo Dois</label>
                         <input type="text" class="form-control" id="campo3">
                     </div>
