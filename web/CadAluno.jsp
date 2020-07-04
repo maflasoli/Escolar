@@ -26,8 +26,8 @@
 
         <!--//INICIO DA IMPLEMENTAÇÃO DO CADASTRO-->
         <form action="CadAluno.jsp">
-            <!-- area de campos do form -->
-            <div class="container">
+            <!-- area de campos do form .... onde consta ("p-3 mb-2 bg-info text-white") é sobre a cor ("rounded") é arredondar as pontas..-->
+            <div class="p-3 mb-2 bg-info text-white rounded border border-dark container" >
                 
                 <!--FAZENDO AJUSTE DE LARGURA DO CONTAINER-->
                 
