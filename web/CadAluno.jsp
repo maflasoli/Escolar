@@ -27,136 +27,176 @@
         <!--//INICIO DA IMPLEMENTAÇÃO DO CADASTRO-->
         <form action="CadAluno.jsp">
             <!-- area de campos do form .... onde consta ("p-3 mb-2 bg-info text-white") é sobre a cor ("rounded") é arredondar as pontas..-->
-            <div class="p-3 mb-2 bg-info text-white rounded border border-dark container" >
+            <div class="p-3 m-10 bg-info text-white rounded border border-dark container" >
 
                 <!--FAZENDO AJUSTE DE LARGURA DO CONTAINER-->
 
-                <div class="row justify-content-md-center">
-
-                    <div class="form-group col-md-5">
+                <div class="my-0 row justify-content-md-center">
+                    <div class="form-group col-md-5 shadow p-4 mb-4">
                         <label for="ue">Unidade Escolar</label>
-                        <input type="text" class="form-control" id="ue" name="ue">
+                        <input type="text" class="form-control form-control-sm" id="ue" name="ue">
                     </div>
                 </div>
                 <!------------------------------------------------------------------------>
                 Aluno
-                <div class="row justify-content-md-center border-top">
+                <div class="mx-0 px-0 row justify-content-md-center border-top">
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="RM">RM</label>
-                        <input type="text" class="form-control" id="RM" name="rm">
+                        <input type="text" class="form-control form-control-sm" id="RM" name="rm">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="rgra">RG/RA</label>
-                        <input type="text" class="form-control" id="rgra" name="rgra">
+                        <input type="text" class="form-control form-control-sm" id="rgra" name="rgra">
                     </div>
 
-                    <div class="form-group col-md-6">
+                    <div class="mx-1 px-0 form-group col-md-6">
                         <label for="nomealuno">Nome</label>
-                        <input type="text" class="form-control" id="nomealuno" name="nomealuno">
+                        <input type="text" class="form-control form-control-sm" id="nomealuno" name="nomealuno">
                     </div>
                 </div>
                 <!------------------------------------------------------------------------>
                 Nascimento
-                <div class="row justify-content-md-center border-top">
+                <div class="mx-0 px-0 row justify-content-md-center border-top">
 
-                    <div class="form-group col-md-3">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="cidnascimento">Cidade</label>
-                        <input type="text" class="form-control" id="cidnascimento" name="cidnascimento">
+                        <input type="text" class="form-control form-control-sm" id="cidnascimento" name="cidnascimento">
                     </div>
 
-                    <div class="form-group col-md-1">
+                    <div class="mx-1 px-0 form-group col-md-1">
                         <label for="ufnascimento">UF</label>
-                        <input type="text" class="form-control" id="ufnascimento" name="ufnascimento">
+                        <input type="text" class="form-control form-control-sm" id="ufnascimento" name="ufnascimento">
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="nacionalidade">Nacionalidade</label>
-                        <input type="text" class="form-control" id="nacionalidade" name="nacionalidade">
+                        <input type="text" class="form-control form-control-sm" id="nacionalidade" name="nacionalidade">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="corraca">Cor/Raça</label>
-                        <input type="text" class="form-control" id="corraca" name="corraca">
+                        <input type="text" class="form-control form-control-sm" id="corraca" name="corraca">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="dtanascimento">Data</label>
-                        <input type="text" class="form-control" id="dtanascimento" name="dtanascimento">
+                        <input type="text" class="form-control form-control-sm" id="dtanascimento" name="dtanascimento">
                     </div>
 
-                    <div class="form-group col-md-1">
+                    <div class="mx-1 px-0 form-group col-md-1">
                         <label for="sexo">Sexo</label>
-                        <input type="text" class="form-control" id="sexo" name="sexo">
+                        <input type="text" class="form-control form-control-sm" id="sexo" name="sexo">
                     </div>
                 </div>
                 <!------------------------------------------------------------------------>
                 Documentação(Certidão de Nascimento)
-                <div class="row justify-content-md-center border-top">
+                <div class="mx-0 px-0 row justify-content-md-center border-top">
 
-                    <div class="form-group col-md-1">
+                    <div class="mx-1 px-0 form-group col-md-1">
                         <label for="folhadoc">Folha</label>
-                        <input type="text" class="form-control" id="folhadoc" name="folhadoc">
+                        <input type="text" class="form-control form-control-sm" id="folhadoc" name="folhadoc">
                     </div>
 
-                    <div class="form-group col-md-1">
+                    <div class="mx-1 px-0 form-group col-md-1">
                         <label for="livrodoc">Livro</label>
-                        <input type="text" class="form-control" id="livrodoc" name="livrodoc">
+                        <input type="text" class="form-control form-control-sm" id="livrodoc" name="livrodoc">
                     </div>
 
-                    <div class="form-group col-md-1">
+                    <div class="mx-1 px-0 form-group col-md-1">
                         <label for="numdoc">Número</label>
-                        <input type="text" class="form-control" id="numdoc" name="numdoc">
+                        <input type="text" class="form-control form-control-sm" id="numdoc" name="numdoc">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="dtaemidoc">Data Emissão</label>
-                        <input type="text" class="form-control" id="dtaemidoc" name="dtaemidoc">
+                        <input type="text" class="form-control form-control-sm" id="dtaemidoc" name="dtaemidoc">
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="mx-1 px-0 form-group col-md-3">
                         <label for="comarcadoc">Comarca</label>
-                        <input type="text" class="form-control" id="comarcadoc" name="comarcadoc">
+                        <input type="text" class="form-control form-control-sm" id="comarcadoc" name="comarcadoc">
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="mx-1 px-0 form-group col-md-3">
                         <label for="mundoc">Distrito/Município</label>
-                        <input type="text" class="form-control" id="mundoc" name="mundoc">
+                        <input type="text" class="form-control form-control-sm" id="mundoc" name="mundoc">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="mx-1 px-0 form-group col-md-5">
                         <label for="certnovadoc">Certidão Nova</label>
-                        <input type="text" class="form-control" id="certnovadoc" name="certnovadoc">
+                        <input type="text" class="form-control form-control-sm" id="certnovadoc" name="certnovadoc">
                     </div>
                 </div>
                 <!------------------------------------------------------------------------>
                 Documentação(R.G. Civil / C.P.F.)
-                <div class="row justify-content-md-center border-top">
+                <div class="mx-0 px-0 row justify-content-md-center border-top">
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="rgcivil">R.G. Civil</label>
-                        <input type="text" class="form-control" id="rgcivil" name="rgcivil">
+                        <input type="text" class="form-control form-control-sm" id="rgcivil" name="rgcivil">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="dtaemirgcivil">Data Emissão</label>
-                        <input type="text" class="form-control" id="dtaemirgcivil" name="dtaemirgcivil">
+                        <input type="text" class="form-control form-control-sm" id="dtaemirgcivil" name="dtaemirgcivil">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="mx-1 px-0 form-group col-md-2">
                         <label for="cpf">C.P.F.</label>
-                        <input type="text" class="form-control" id="cpf" name="cpf">
+                        <input type="text" class="form-control form-control-sm" id="cpf" name="cpf">
                     </div>
-                    <div class="form-group col-md-1">
-                        <label for="bolsafamilia">Participa do Bolsa Família</label>
-                        <input type="text" class="form-control" id="bolsafamilia" name="bolsafamilia">
+                    <div class="mx-1 px-0 form-group col-md-1">
+                        <label for="bolsafamilia">Bolsa Família</label>
+                        <input type="text" class="form-control form-control-sm" id="bolsafamilia" name="bolsafamilia">
                     </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="mx-1 px-0 form-group col-md-4">
                         <label for="numnis">Número do N.I.S.</label>
-                        <input type="text" class="form-control" id="numnis" name="numnis">
+                        <input type="text" class="form-control form-control-sm" id="numnis" name="numnis">
                     </div>
                 </div>
+                <!------------------------------------------------------------------------>
+                CAMPOS PARA RESPONSÁVEIS <br>
+                <!------------------------------------------------------------------------>
+                Endereço
+                <div class="mx-0 px-0 row justify-content-md-center border-top">
+
+                    <div class="mx-1 px-0 form-group col-md-1">
+                        <label for="cepaluno">C.E.P.</label>
+                        <input type="text" class="form-control form-control-sm" id="cepaluno" name="cepaluno">
+                    </div>
+
+                    <div class="mx-1 px-0 form-group col-md-3">
+                        <label for="ruaaluno">Rua</label>
+                        <input type="text" class="form-control form-control-sm" id="ruaaluno" name="ruaaluno">
+                    </div>
+
+                    <div class="mx-1 px-0 form-group col-md-1">
+                        <label for="numendaluno">Nº</label>
+                        <input type="text" class="form-control form-control-sm" id="numendaluno" name="numendaluno">
+                    </div>
+                    <div class="mx-1 px-0 form-group col-md-3">
+                        <label for="compendaluno">Complemento</label>
+                        <input type="text" class="form-control form-control-sm" id="compendaluno" name="compendaluno">
+                    </div>
+
+                    <div class="mx-1 px-0 form-group col-md-3">
+                        <label for="bairroaluno">Bairro</label>
+                        <input type="text" class="form-control form-control-sm" id="bairroaluno" name="bairroaluno">
+                    </div>
+                    <div class="mx-1 px-0 form-group col-md-3">
+                        <label for="cidadealuno">Bairro</label>
+                        <input type="text" class="form-control form-control-sm" id="cidadealuno" name="cidadealuno">
+                    </div>
+                    <div class="mx-1 px-0 form-group col-md-1">
+                        <label for="ufaluno">U.F.</label>
+                        <input type="text" class="form-control form-control-sm" id="ufaluno" name="ufaluno">
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------>
+
+
 
             </div>    
             <hr />
