@@ -12,9 +12,15 @@
         <title>JSP Page</title>
         <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+
+
 
     </head>
     <body>
+
         <%
             /*String usuario = (String) session.getAttribute("usuario");
              if (usuario == null) {
@@ -157,7 +163,125 @@
                     </div>
                 </div>
                 <!------------------------------------------------------------------------>
-                CAMPOS PARA RESPONSÁVEIS <br>
+
+                Filiação e/ou Responsável
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Aluno</th>
+                            <th scope="col">Indice</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Associação</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1122</th>
+                            <td>1</td>
+                            <td>Antônio José</td>
+                            <td>Pai</td>
+                            <td>(11)97845-1234</td>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalResponsaveis">
+                                    Alterar
+                                </button>
+                                <button type="button" class="btn btn-danger">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2233</th>
+                            <td>2</td>
+                            <td>Maria Mercedes</td>
+                            <td>Mãe</td>
+                            <td>(11) 96352-2536</td>
+                            <td>
+                                <button type="button" class="btn btn-secondary">Alterar</button>
+                                <button type="button" class="btn btn-danger">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3344</th>
+                            <td>3</td>
+                            <td>Janaína Lopes</td>
+                            <!--<td colspan="2">Janaína Lopes</td> EXEMPLO DE MAIS DE UMA COLUNA NA LINHA-->
+                            <td>Tia</td>
+                            <td>(11) 4534-0295</td>
+                            <td>
+                                <button type="button" class="btn btn-secondary">Alterar</button>
+                                <button type="button" class="btn btn-danger">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- MODAL CADASTRO DE PAIS E/OU RESPONSÁVEIS POR ALUNO -->
+                <div class="modal" id="ModalResponsaveis" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content alert-primary">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado">Cadastro de Responsáveis</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form name="frmCadResponsavel" action="CadAluno.jsp" method="POST">
+                                    <!------------------------------------------------------------------------>
+
+                                    <div class="ml-1 px-0 form-group col-md-2">
+                                        <label for="raaluno">R.A.</label>
+                                        <input type="text" class="form-control form-control-sm" id="raaluno" name="raaluno">
+                                    </div>
+                                    Responsável
+                                    <div class="mx-0 px-0 row justify-content-md-center border-top">
+                                        <div class="ml-1 px-0 form-group col-md-5">
+                                            <label for="nomeresponsavel">Nome</label>
+                                            <input type="text" class="form-control form-control-sm" id="nomeresponsavel" name="nomeresponsavel">
+                                        </div>
+
+                                        <div class="ml-1 px-0 form-group col-md-2">
+                                            <label for="rgresponsavel">R.G.</label>
+                                            <input type="text" class="form-control form-control-sm" id="rgresponsavel" name="rgresponsavel">
+                                        </div>
+                                        <div class="ml-1 px-0 form-group col-md-2">
+                                            <label for="cpfresponsavel">C.P.F.</label>
+                                            <input type="text" class="form-control form-control-sm" id="cpfresponsavel" name="cpfresponsavel">
+                                        </div>
+                                        <div class="ml-1 px-0 form-group col-md-2">
+                                            <label for="associacao">Associação</label>
+                                            <input type="text" class="form-control form-control-sm" id="associacao" name="associacao">
+                                        </div>
+                                    </div>
+                                    Contatos
+                                    <div class="mx-0 px-0 row justify-content-md-center border-top">
+                                        <div class="ml-1 px-0 form-group col-md-3">
+                                            <label for="telresidencia">Tel.Residencial</label>
+                                            <input type="text" class="form-control form-control-sm" id="telresidencia" name="telresidencia">
+                                        </div>
+
+                                        <div class="ml-1 px-0 form-group col-md-2">
+                                            <label for="telcelular">Tel.Celular</label>
+                                            <input type="text" class="form-control form-control-sm" id="telcelular" name="telcelular">
+                                        </div>
+                                        <div class="ml-1 px-0 form-group col-md-2">
+                                            <label for="emailresponsavel">e-mail@</label>
+                                            <input type="text" class="form-control form-control-sm" id="emailresponsavel" name="emailresponsavel">
+                                        </div>
+                                    </div>
+                                    <!------------------------------------------------------------------------>
+
+                                </form>
+                                <!--
+                                COLOCAR AQUI O CÓDIGO PARA A INCLUSÃO DO RESPONSÁVEL
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - MODAL CADASTRO DE PAIS E/OU RESPONSÁVEIS POR ALUNO -->
+
                 <!------------------------------------------------------------------------>
                 Endereço
                 <div class="mx-0 px-0 row justify-content-md-center border-top">
@@ -215,6 +339,8 @@
         </form>
 
         <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/jquery-ui-1.12.1.custom/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="assets/web/assets/jquery/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
     </body>
 </html>
