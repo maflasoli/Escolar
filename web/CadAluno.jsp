@@ -16,9 +16,13 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
 
-
+        <script>
+            
+        </script>
+        
 
     </head>
+    
     <body>
 
         <%
@@ -229,14 +233,14 @@
                             <div class="modal-body">
                                 <form name="frmCadResponsavel" action="CadAluno.jsp" method="POST">
                                     <!------------------------------------------------------------------------>
-
-                                    <div class="ml-1 px-0 form-group col-md-2">
+                                    <!--RA FICARÁ INVISÍVEL.. VEJAMOS SUA REAL NECESSIDADE AQUI-->
+                                    <div class="ml-1 px-0 form-group col-md-2" hidden="true">
                                         <label for="raaluno">R.A.</label>
                                         <input type="text" class="form-control form-control-sm" id="raaluno" name="raaluno">
                                     </div>
                                     Responsável
                                     <div class="mx-0 px-0 row justify-content-md-center border-top">
-                                        <div class="ml-1 px-0 form-group col-md-5">
+                                        <div class="ml-1 px-0 form-group col-md-4">
                                             <label for="nomeresponsavel">Nome</label>
                                             <input type="text" class="form-control form-control-sm" id="nomeresponsavel" name="nomeresponsavel">
                                         </div>
@@ -252,6 +256,10 @@
                                         <div class="ml-1 px-0 form-group col-md-2">
                                             <label for="associacao">Associação</label>
                                             <input type="text" class="form-control form-control-sm" id="associacao" name="associacao">
+                                        </div>
+                                        <div class="ml-1 px-0 form-group col-md-2">
+                                            <label for="escolaridade">Escolaridade</label>
+                                            <input type="text" class="form-control form-control-sm" id="escolaridade" name="escolaridade">
                                         </div>
                                     </div>
                                     Contatos
@@ -270,8 +278,29 @@
                                             <input type="text" class="form-control form-control-sm" id="emailresponsavel" name="emailresponsavel">
                                         </div>
                                     </div>
-                                    <!------------------------------------------------------------------------>
+                                    Trabalho
+                                    <div class="mx-0 px-0 row justify-content-md-center border-top">
+                                        <div class="ml-1 px-0 form-group col-md-3">
+                                            <label for="profissao">Profissão</label>
+                                            <input type="text" class="form-control form-control-sm" id="profissao" name="profissao">
+                                        </div>
 
+                                        <div class="ml-1 px-0 form-group col-md-3">
+                                            <label for="empresa">Empresa</label>
+                                            <input type="text" class="form-control form-control-sm" id="empresa" name="empresa">
+                                        </div>
+                                        <div class="ml-1 px-0 form-group col-md-3">
+                                            <label for="endempresa">End.Empresa</label>
+                                            <input type="text" class="form-control form-control-sm" id="endempresa" name="endempresa">
+                                        </div>
+                                        <div class="ml-1 px-0 form-group col-md-2">
+                                            <label for="telempresa">Tel.Empresa</label>
+                                            <input type="text" class="form-control form-control-sm" id="telempresa" name="telempresa">
+                                        </div>
+                                    </div>
+                                    <!------------------------------------------------------------------------>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    <button type="submit" class="btn btn-success">Salvar</button>
                                 </form>
                                 <!--
                                 COLOCAR AQUI O CÓDIGO PARA A INCLUSÃO DO RESPONSÁVEL
