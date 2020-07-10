@@ -17,7 +17,9 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
 
         <script>
-            
+            function saporra(){
+                alert("Deu certo saporra");
+            }
         </script>
         
 
@@ -300,7 +302,8 @@
                                     </div>
                                     <!------------------------------------------------------------------------>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                    <button type="submit" class="btn btn-success">Salvar</button>
+                                    <!--<button type="submit" class="btn btn-success">Salvar</button>-->
+                                    <button onclick="saporra()"; class="btn btn-success">Salvar</button>
                                 </form>
                                 <!--
                                 COLOCAR AQUI O CÓDIGO PARA A INCLUSÃO DO RESPONSÁVEL
