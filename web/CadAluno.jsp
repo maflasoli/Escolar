@@ -17,8 +17,39 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
 
         <script>
-            function saporra(){
-                alert("Deu certo saporra");
+            var botaoAdicionar = document.querySelector("#botaoSalvar");
+            
+            var indice = document.querySelector("input[name='nomeresponsavel']");
+            var indice = document.querySelector("input[name='rgresponsavel']");
+            var indice = document.querySelector("input[name='cpfresponsavel']");
+            var indice = document.querySelector("input[name='associacao']");
+
+            var corpoTabela = document.querySelector("tbody");
+            
+            function criarLinhaResponsavel(){
+                //Criar elementos
+                var linha = document.createElement("tr");
+                var campoIndice = document.createElement("td");
+                var campoNome = document.createElement("td");
+                var campoAssociacao = document.createElement("td");
+                var campoTelefone = document.createElement("td");
+                var campoAcao = document.createElement("td");
+                //Aplicar um estilo aos elementos -> CASO QUEIRA APLICAR UM CSS
+                
+                //Criar Nós PRECISO APRENDER COMO PEGAR O VALOR DIGITADO NO CAMPO DA MODAL.. COLOQUEI POR COLOCAR UM CONTEÚDO
+//                var textoIndice = document.createTextNode(nomeresponsavel);
+//                var textoNome = document.createTextNode(rgresponsavel);
+//                var textoAssociacao = document.createTextNode(cpfresponsavel);
+//                var textoTelefone = document.createTextNode(associacao);
+                
+                //Vincular os nós aos elementos.
+                campoIndice.appendChild(textoIndice);
+                campoNome.appendChild(textoNome);
+                campoAssociacao.appendChild(textoAssociacao);
+                campoTelefone.appendChild(textoTelefone);
+                //campoAcao.appendChild(); APRENDER A COLOCAR OS BOTÕES
+                corpoTabela.appendChild(linha);
+                
             }
         </script>
         
@@ -196,29 +227,6 @@
                                 <button type="button" class="btn btn-danger">Excluir</button>
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">2233</th>
-                            <td>2</td>
-                            <td>Maria Mercedes</td>
-                            <td>Mãe</td>
-                            <td>(11) 96352-2536</td>
-                            <td>
-                                <button type="button" class="btn btn-secondary">Alterar</button>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3344</th>
-                            <td>3</td>
-                            <td>Janaína Lopes</td>
-                            <!--<td colspan="2">Janaína Lopes</td> EXEMPLO DE MAIS DE UMA COLUNA NA LINHA-->
-                            <td>Tia</td>
-                            <td>(11) 4534-0295</td>
-                            <td>
-                                <button type="button" class="btn btn-secondary">Alterar</button>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
 
@@ -303,7 +311,7 @@
                                     <!------------------------------------------------------------------------>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                                     <!--<button type="submit" class="btn btn-success">Salvar</button>-->
-                                    <button onclick="saporra()"; class="btn btn-success">Salvar</button>
+                                    <button id="botaoSalvar" onclick="saporra()"; class="btn btn-success">Salvar</button>
                                 </form>
                                 <!--
                                 COLOCAR AQUI O CÓDIGO PARA A INCLUSÃO DO RESPONSÁVEL
