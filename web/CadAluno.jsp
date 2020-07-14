@@ -19,38 +19,31 @@
         <script>
             var botaoAdicionar = document.querySelector("#botaoSalvar");
             
-            var indice = document.querySelector("input[name='nomeresponsavel']");
-            var indice = document.querySelector("input[name='rgresponsavel']");
-            var indice = document.querySelector("input[name='cpfresponsavel']");
-            var indice = document.querySelector("input[name='associacao']");
+            var nome = document.querySelector("input[name='nomeresponsavel']");
+            var rg = document.querySelector("input[name='rgresponsavel']");
+            var cpf = document.querySelector("input[name='cpfresponsavel']");
+            var associacao = document.querySelector("input[name='associacao']");
+            var escolaridade = document.querySelector("input[name='escolaridade']");
+
 
             var corpoTabela = document.querySelector("tbody");
             
+            
             function criarLinhaResponsavel(){
                 //Criar elementos
+                event.preventDefault();
                 var linha = document.createElement("tr");
                 var campoIndice = document.createElement("td");
                 var campoNome = document.createElement("td");
                 var campoAssociacao = document.createElement("td");
                 var campoTelefone = document.createElement("td");
                 var campoAcao = document.createElement("td");
-                //Aplicar um estilo aos elementos -> CASO QUEIRA APLICAR UM CSS
                 
-                //Criar Nós PRECISO APRENDER COMO PEGAR O VALOR DIGITADO NO CAMPO DA MODAL.. COLOQUEI POR COLOCAR UM CONTEÚDO
-//                var textoIndice = document.createTextNode(nomeresponsavel);
-//                var textoNome = document.createTextNode(rgresponsavel);
-//                var textoAssociacao = document.createTextNode(cpfresponsavel);
-//                var textoTelefone = document.createTextNode(associacao);
-                
-                //Vincular os nós aos elementos.
-                campoIndice.appendChild(textoIndice);
-                campoNome.appendChild(textoNome);
-                campoAssociacao.appendChild(textoAssociacao);
-                campoTelefone.appendChild(textoTelefone);
-                //campoAcao.appendChild(); APRENDER A COLOCAR OS BOTÕES
-                corpoTabela.appendChild(linha);
+                console.log(nome.value);
+
                 
             }
+            //botaoAdicionar.addEventListener('click',criarLinhaResponsavel);
         </script>
         
 
@@ -205,21 +198,21 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">Aluno</th>
-                            <th scope="col">Indice</th>
                             <th scope="col">Nome</th>
+                            <th scope="col">R.G.</th>
+                            <th scope="col">C.P.F.</th>
                             <th scope="col">Associação</th>
-                            <th scope="col">Telefone</th>
+                            <th scope="col">Escolaridade</th>
                             <th scope="col">Ações</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1122</th>
-                            <td>1</td>
-                            <td>Antônio José</td>
+                            <th scope="row">Marcos</th>
+                            <td>34.271.015-1</td>
+                            <td>300.908.458.70</td>
                             <td>Pai</td>
-                            <td>(11)97845-1234</td>
+                            <td>Superior Completo</td>
                             <td>
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalResponsaveis">
                                     Alterar
@@ -241,7 +234,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form name="frmCadResponsavel" action="CadAluno.jsp" method="POST">
+                                <form name="frmCadResponsavel" onclick="criarLinhaResponsavel()" action="" method="POST">
                                     <!------------------------------------------------------------------------>
                                     <!--RA FICARÁ INVISÍVEL.. VEJAMOS SUA REAL NECESSIDADE AQUI-->
                                     <div class="ml-1 px-0 form-group col-md-2" hidden="true">
@@ -311,7 +304,7 @@
                                     <!------------------------------------------------------------------------>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                                     <!--<button type="submit" class="btn btn-success">Salvar</button>-->
-                                    <button id="botaoSalvar" onclick="saporra()"; class="btn btn-success">Salvar</button>
+                                    <button id="botaoSalvar" class="btn btn-success">Salvar</button>
                                 </form>
                                 <!--
                                 COLOCAR AQUI O CÓDIGO PARA A INCLUSÃO DO RESPONSÁVEL
