@@ -17,38 +17,22 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
 
         <script>
-            var botaoAdicionar = document.querySelector("#botaoSalvar");
-            
-            var nome = document.querySelector("input[name='nomeresponsavel']");
-            var rg = document.querySelector("input[name='rgresponsavel']");
-            var cpf = document.querySelector("input[name='cpfresponsavel']");
-            var associacao = document.querySelector("input[name='associacao']");
-            var escolaridade = document.querySelector("input[name='escolaridade']");
+//            var crianome = document.getElementById("#nomeresponsavel").value;
 
-
-            var corpoTabela = document.querySelector("tbody");
-            
-            
-            function criarLinhaResponsavel(){
-                //Criar elementos
+            function criarLinhaResponsavel() {
                 event.preventDefault();
-                var linha = document.createElement("tr");
-                var campoIndice = document.createElement("td");
-                var campoNome = document.createElement("td");
-                var campoAssociacao = document.createElement("td");
-                var campoTelefone = document.createElement("td");
-                var campoAcao = document.createElement("td");
-                
-                console.log(nome.value);
+//              ESSE TBM FUNCIONA  var crianome = document.querySelector("#nomeresponsavel").value;
+                var crianome = document.getElementById("nomeresponsavel").value;
+                console.log(crianome);
 
-                
+
             }
             //botaoAdicionar.addEventListener('click',criarLinhaResponsavel);
         </script>
-        
+
 
     </head>
-    
+
     <body>
 
         <%
@@ -304,7 +288,7 @@
                                     <!------------------------------------------------------------------------>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                                     <!--<button type="submit" class="btn btn-success">Salvar</button>-->
-                                    <button id="botaoSalvar" class="btn btn-success">Salvar</button>
+                                    <button id="botaoSalvar" onclick="criarLinhaResponsavel()" class="btn btn-success">Salvar</button>
                                 </form>
                                 <!--
                                 COLOCAR AQUI O CÓDIGO PARA A INCLUSÃO DO RESPONSÁVEL
